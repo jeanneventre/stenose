@@ -5,9 +5,27 @@
 Pour récupérer le dépôt, utiliser la commande :
 ```
 git clone https://github.com/monidentifiant/monprojet
+
 ```
+monidentifiant : jeanneventre
+monprojet : stenose
+
 à l'endroit où l'on souhaite déposer le répertoire git. 
- 
+
+### Erreur 
+En cas d'erreur du type : 
+```
+error: The requested URL returned error: 403 Forbidden while accessing https://github.com/jeanneventre/stenose/info/refs
+
+fatal: HTTP request failed
+```
+
+utiliser la commande : 
+```
+git remote set-url origin https://jeanneventre@github.com/jeanneventre/stenose
+
+```
+
 ### Mise à jour, modifications
 Pour manipuler le dépot Git, il est possible d'utiliser soit une interface graphique (SourceTree - mac - ou Kraken - multi-plateforme) avint d'éviter l'apprentissage des commandes terminales.
 Dans tous les cas, il faut :
